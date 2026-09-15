@@ -1,0 +1,14 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "selection-window-capability",
+  "description": "Minimal permissions for the selection toolbar and reusable result window",
+  "windows": ["toolbar", "result"],
+  "permissions": [
+    "core:event:default",
+    "core:window:allow-hide",
+    "core:window:allow-set-size",
+    "core:window:allow-minimize",
+    "core:window:allow-toggle-maximize",
+    "core:window:allow-start-dragging"
+  ]
+}

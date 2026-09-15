@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "ZhiForge Browser Helper",
+  "version": "1.0.0",
+  "description": "Adds structured Zhihu source context to the ZhiForge desktop capture flow.",
+  "host_permissions": [
+    "http://127.0.0.1:17832/*",
+    "https://zhihu.com/*",
+    "https://*.zhihu.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "desktop-bridge.js",
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://zhihu.com/*",
+        "https://*.zhihu.com/*"
+      ],
+      "js": [
+        "zhihu-adapter.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zhiforge-helper@local"
+    }
+  }
+}

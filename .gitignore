@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Frontend build
+dist/
+
+# Rust / Tauri build
+src-tauri/target/
+target/
+
+# Packaged releases / installers
+release/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Tauri/WebView runtime leftovers
+*.WebView2/

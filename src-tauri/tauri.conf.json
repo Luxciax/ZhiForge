@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ZhiForge",
+  "version": "1.4.0",
+  "identifier": "com.zhiforge.app",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "toolbar",
+        "title": "ZhiForge",
+        "width": 350,
+        "height": 43,
+        "visible": false,
+        "focus": false,
+        "focusable": false,
+        "decorations": false,
+        "transparent": true,
+        "resizable": false,
+        "maximizable": false,
+        "minimizable": false,
+        "closable": false,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "shadow": false
+      },
+      {
+        "label": "result",
+        "title": "ZhiForge",
+        "width": 1120,
+        "height": 760,
+        "minWidth": 640,
+        "minHeight": 420,
+        "visible": false,
+        "focus": false,
+        "focusable": true,
+        "decorations": false,
+        "transparent": true,
+        "resizable": true,
+        "maximizable": true,
+        "minimizable": true,
+        "closable": false,
+        "alwaysOnTop": false,
+        "skipTaskbar": false,
+        "shadow": false
+      }
+    ],
+    "security": { "csp": null }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

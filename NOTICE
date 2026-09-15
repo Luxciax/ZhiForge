@@ -1,0 +1,23 @@
+ZhiForge
+Copyright (C) 2026 Luxciax and ZhiForge contributors
+
+Licensing
+---------
+ZhiForge-owned code in v1.4.0 and later is made available under the PolyForm Noncommercial License 1.0.0 unless a file or component states otherwise.
+
+Commercial or business use of ZhiForge-owned code in v1.4.0 and later requires a separate written commercial license. See COMMERCIAL_LICENSE.md.
+
+Versions released through v1.3.0 were distributed under GNU Affero General Public License v3.0 (AGPL-3.0-only). Existing license grants for those versions are not retroactively revoked.
+
+Attribution
+-----------
+ZhiForge's product design and early implementation research were informed by Cherry Studio, including its selection-translation interaction patterns and model-provider compatibility concepts.
+
+Cherry Studio is developed by CherryHQ and its contributors and is distributed under the GNU Affero General Public License v3.0.
+Official project: https://github.com/CherryHQ/cherry-studio
+
+ZhiForge is an independent project and is not affiliated with, endorsed by, or an official fork of Cherry Studio or CherryHQ.
+
+Third-Party Code
+----------------
+Any third-party code, adapted portions, dependencies, or assets remain governed by their respective original licenses and copyright notices. If any copyrightable Cherry Studio code or adapted portion is present, the original Cherry Studio copyright and AGPL-3.0 obligations continue to apply to that material. The ZhiForge license does not override third-party license obligations.

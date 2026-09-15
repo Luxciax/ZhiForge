@@ -1,0 +1,44 @@
+[package]
+name = "zhiforge"
+version = "1.4.0"
+description = "Local-first desktop knowledge internalization assistant"
+authors = ["ZhiForge contributors"]
+license = "PolyForm-Noncommercial-1.0.0"
+repository = "https://github.com/Luxciax/ZhiForge"
+edition = "2021"
+
+[lib]
+name = "zhiforge_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.32", features = ["bundled", "backup"] }
+sha2 = "0.10"
+uuid = { version = "1", features = ["v4"] }
+thiserror = "2"
+uiautomation = "0.25"
+windows = { version = "0.62.2", features = [
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_System_Com",
+  "Win32_System_DataExchange",
+  "Win32_System_Ole",
+  "Win32_System_Memory",
+  "Win32_System_Threading",
+  "Win32_System_Variant",
+  "Win32_UI_Accessibility",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_WindowsAndMessaging"
+] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "stream", "rustls-tls"] }
+futures-util = "0.3"
+keyring = { version = "3", default-features = false, features = ["windows-native"] }
+tokio = { version = "1", features = ["time"] }
+tauri-plugin-single-instance = "2"
+tauri-plugin-autostart = "2"
